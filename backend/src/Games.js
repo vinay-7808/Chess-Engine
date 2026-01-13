@@ -1,15 +1,16 @@
+import { Chess } from "chess.js";
+
+
 export class Game {
     player1;
     player2;
     board;
-    moves;
     startTime;
 
     constructor(player1, player2) {
         this.player1 = player1;
         this.player2 = player2;
-        this.board = "";
-        this.moves = [];
+        this.board = new Chess();
         this.startTime = new Date;
     }
 
